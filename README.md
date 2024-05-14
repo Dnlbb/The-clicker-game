@@ -54,33 +54,33 @@ This project is a simple Java-based graphical game using the Swing framework. Th
    * The game continues until you close the application.
 ## Detailed Class Explanation
 ### `Game` Class
-**Constructor**:
+- **Constructor**:
 * Initializes the game window with a title, size, and default settings.
 * Sets up the main game panel and other components (buttons, labels, combo box).
-**`setupComponents()` Method**:
+- **`setupComponents()` Method**:
 * Configures the visual properties of the components.
 * Adds action listeners for the start button and mode combo box.
 * Creates top and bottom panels to hold the components.
-**`setupTimers()` Method**:
+- **`setupTimers()` Method**:
 * Initializes the game timer to update the elapsed time every second.
 * Initializes the ball move timer to relocate the ball at set intervals.
-**`startGame()` Method**:
+- **`startGame()` Method**:
 * Resets the score and time.
 * Starts the game and ball move timers.
 * Calls `setMode()` to configure the game based on the selected difficulty level.
 * Calls `moveBall()` to place the ball on the game panel.
-**`setMode(int mode)` Method**:
+- **`setMode(int mode)` Method**:
 * Configures the ball size and movement delay based on the selected game mode.
 * Updates the current mode and timer delay accordingly.
-**`moveBall()` Method**:
+- **`moveBall()` Method**:
 * Randomly places the ball within the game panel boundaries.
 * Handles ball color changes for Color Switch mode.
 * Adds an action listener to the ball to handle scoring.
-**`CircleButton` Class**:
+- **`CircleButton` Class**:
 * Extends JButton to create a circular button.
 * Overrides the paintComponent method to draw an oval representing the ball.
 * Sets the foreground color of the ball.
-**`main` Method**:
+- **`main` Method**:
 * Launches the game by creating an instance of the Game class and making it visible.
 ## Dependencies
 * Java Development Kit (JDK) 8 or higher.
